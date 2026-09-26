@@ -1,0 +1,55 @@
+/* Default Theme Variables (Light Mode) */
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #1a1a1a;
+  --card-bg: #ffffff;
+  --button-bg: #2d3748;
+  --button-text: #ffffff;
+}
+
+/* Dark Theme Variables */
+body.dark-mode {
+  --bg-color: #1a1a2e;
+  --text-color: #e6e6e6;
+  --card-bg: #16213e;
+  --button-bg: #e94560;
+  --button-text: #ffffff;
+}
+
+/* Page Layout */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}

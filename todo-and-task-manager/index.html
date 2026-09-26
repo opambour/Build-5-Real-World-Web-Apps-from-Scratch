@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster Pro - To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>TaskMaster Pro</h1>
+    
+    <!-- Task Input Form -->
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off">
+      <button type="submit" id="add-btn">Add Task</button>
+    </form>
+
+    <!-- Task List Container -->
+    <ul id="todo-list">
+      <!-- Tasks will be injected dynamically via JavaScript -->
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
